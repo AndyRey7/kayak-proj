@@ -1,0 +1,32 @@
+---
+layout: promotional
+subject: 40% Off on New Years
+percentage: 40
+---
+<container>
+    <row class="header">
+        <columns small="12" large="12">
+            <h1 class="text-center">{{ laborDay.title }}</h1>
+        </columns>
+    </row>
+
+        {{#each laborDay.products}}
+            <row>
+                <columns>
+                    <h2>{{this.title}}</h2>
+                    <img src="{{this.image_url}}" alt="sneakers"/>
+                    <figcaption>${{this.price}}</figcaption>
+
+                </columns>
+            </row>
+        {{/each}}
+
+    <row>
+        <columns small="12" large="12">coumn 1</columns>
+        <columns small="6" large="12">column  2</columns>
+        <columns small="6" large="12">coulmn 3</columns>
+        {{#bold}}
+            <h2>IS THIS BOLD</h2>
+        {{/bold}}
+    </row>
+</container>
