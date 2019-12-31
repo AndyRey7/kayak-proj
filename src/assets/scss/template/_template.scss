@@ -1,21 +1,42 @@
 .header {
     background: #ff6a10;
     background-color: #ff6a10;
+
+    .columns {
+
+        padding: 20px;
+
+        .logo_white {
+            width: 135px;
+        }
+        .logo_user {
+            width: 32px;
+        }
+    }
 }
 
 .sub-header {
     background: #d65600;
     background-color: #d65600;
     color: #fff;
-}
 
-.columns {
-    padding: 20px;
+    .columns {
+        padding: 5px 10px;
 
-    .logo_white {
-        width: 135px;
-    }
-    .logo_user {
-        width: 32px;
+        a {
+            color: #fff;
+
+            .icons {
+                width: 20px;
+                margin-right: 7px;
+            }
+        }
+        .menu-divider {
+            display: block;
+            width: 1px;
+            height: 20px;
+            background: #ff6a10;
+            background-color: #ff6a10;
+        }
     }
 }
