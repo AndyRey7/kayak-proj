@@ -29,7 +29,14 @@
             .icons {
                 width: 20px;
                 margin-right: 7px;
+                display: inline-block;
+                vertical-align: bottom;
             }
+        }
+
+        th {
+            text-align: center;
+
         }
         .menu-divider {
             display: block;
@@ -37,6 +44,141 @@
             height: 20px;
             background: #ff6a10;
             background-color: #ff6a10;
+        }
+    }
+}
+
+.deal-of-day {
+    background: #14191e;
+    background-color: #14191e;
+
+    .columns {
+        h2 {
+            color: #fff;
+            font-weight: 900;
+            text-align: center;
+            font-size: 30px;
+        }
+        th {
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        img {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        p {
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+        span {
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+            font-size: 16px;
+            display: block;
+
+            &.save-amount {
+                font-size: 14px;
+            }
+            &.company {
+                padding-bottom: 15px;
+                font-size: 10px;
+            }
+            &.price {
+                padding-bottom: 10px;
+                font-size: 20px;
+            }
+        }
+        .button {
+            display: inline-block;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            width: 150px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            color: #fff;
+            text-align: center;
+            &:hover {
+                color: #ff6a10;
+            }
+        }
+    }
+}
+
+.content-area {
+    background: #f1f4f7;
+    background-color: #f1f4f7;
+
+    & > tbody > tr > th {
+        padding-top: 16px;
+    }
+
+    .offer {
+        background: #fff;
+        background-color: #fff;
+        .columns {
+            th {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            & > table {
+                max-width: 568px;
+                table-layout: fixed;
+            }
+            img {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            p {
+                color: #3b4e5b;
+                font-weight: 600;
+                text-align: center;
+                font-size: 16px;
+                padding-bottom: 10px;
+            }
+            span {
+                color: #3b4e5b;
+                font-weight: 600;
+                text-align: center;
+                font-size: 16px;
+                display: block;
+
+                &.save-amount {
+                    font-size: 14px;
+                    color: #369cf6;
+                }
+                &.company {
+                    padding-bottom: 15px;
+                    font-size: 10px;
+                    color: #3b4e5b;
+                }
+                &.price {
+                    padding-bottom: 10px;
+                    font-size: 20px;
+                    color: #3b4e5b;
+                }
+            }
+            .button {
+                display: inline-block;
+                border: 1px solid #14191e;
+                background: #14191e;
+                background-color: #14191e;
+                border-radius: 5px;
+                width: 150px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                color: #fff;
+                text-align: center;
+                &:hover {
+                    color: #ff6a10;
+                }
+            }
         }
     }
 }
