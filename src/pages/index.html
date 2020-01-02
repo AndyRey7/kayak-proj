@@ -1,18 +1,18 @@
 ---
 layout: kayak
-subject: Great Deals Today
+subject: Deal of the Day
 ---
 <container>
     <row class="deal-of-day">
         <columns>
             <h2>Deal of the Day</h2>
-            <img src="{{root}}/assets/img/kayak_files/ireland.png"/>
-            <p>Ireland: 8 days with air, hotel and car rental. Use promo code CFDL110 to save. Price reflects NYC departure, other cities available.</p>
-            <span class="save-amount">Save $110 with code</span>
-            <span class="company">Gate 1 Travel</span>
-            <span class="price">$649+</span>
+            <img src="{{root}}{{kayakEmail.dealOfTheDay.img}}"/>
+            <p>{{kayakEmail.dealOfTheDay.location}} : {{kayakEmail.dealOfTheDay.description}}.</p>
+            <span class="save-amount">{{kayakEmail.dealOfTheDay.saveAmount}}</span>
+            <span class="company">{{kayakEmail.dealOfTheDay.website}}</span>
+            <span class="price">${{kayakEmail.dealOfTheDay.price}}+</span>
             <center>
-                <a href="#" class="button">See Deal</a>
+                <a href="{{kayakEmail.dealOfTheDay.link}}" class="button">See Deal</a>
             </center>
         </columns>
     </row>
@@ -20,16 +20,18 @@ subject: Great Deals Today
 <container>
     <row class="content-area">
         <columns class="first-offer">
-            <row class="offer">
-                <columns>
-                    <img src="{{root}}/assets/img/kayak_files/cancun.png"/>
-                    <p>Cancun: 4 nights with air and Melody Maker Cancun stay. Price reflects MIA departure, other cities available.</p>
-                    <span class="save-amount">Save up to 65%</span>
-                    <span class="company">CheapCaribbean.com</span>
-                    <span class="price">$689+</span>
-                    <a href="#" class="button">See Deal</a>
-                </columns>
-            </row>
+            {{#each kayakEmail.offers}}
+                <row class="offer">
+                    <columns>
+                        <img src="{{this.img}}"/>
+                        <p>{{this.location}} : {{this.description}}.</p>
+                        <span class="save-amount">{{this.saveAmount}}</span>
+                        <span class="company">{{this.website}}</span>
+                        <span class="price">${{this.price}}+</span>
+                        <a href="{{this.link}}" class="button">See Deal</a>
+                    </columns>
+                </row>
+            {{/each}}
         </columns>
     </row>
 </container>
