@@ -25,6 +25,10 @@ body,
     background-color: #d65600;
     color: #fff;
 
+    & > tbody > tr > th {
+        padding-bottom: 0px;
+    }
+
     .columns {
         padding: 5px 10px;
 
@@ -272,6 +276,107 @@ body,
             width: 35px;
             display: block;
             margin: 0 auto;
+        }
+    }
+}
+
+.footer-menu {
+    background: #14191e;
+    background-color: #14191e;
+    border-top: 1px solid #334755;
+    border-bottom: 1px solid #334755;
+
+    & > tbody > tr > th {
+        padding-bottom: 0px;
+    }
+
+    .columns {
+        padding: 5px 10px;
+
+        a {
+            color: #fff;
+
+            .icons {
+                width: 20px;
+                margin-right: 7px;
+                display: inline-block;
+                vertical-align: bottom;
+            }
+        }
+
+        th {
+            text-align: center;
+
+        }
+        .menu-divider {
+            display: block;
+            width: 1px;
+            height: 20px;
+            background: #334755;
+            background-color: #334755;
+        }
+    }
+}
+
+.footer-bottom {
+    background: #14191e;
+    background-color: #14191e;
+
+    & > tbody > tr > th {
+        padding-top: 30px;
+    }
+
+    .lower-links {
+        & > tbody > tr > th {
+            padding-bottom: 5px;
+        }
+
+
+        .link {
+            color: #fff;
+            font-size: 14px;
+            hyphens: none;
+            margin-right: 10px;
+
+            &:nth-child(4) {
+                margin-right: 0;
+            }
+
+            &:hover {
+                color: #ff6a10;
+            }
+        }
+    }
+
+    .legal-info {
+
+        & > tbody > tr > th {
+            padding-bottom: 25px;
+        }
+
+         p {
+             color: #97999b;
+             font-size: 10px;
+             hyphens: none;
+         }
+    }
+
+    .copyright {
+
+        & > tbody > tr > th {
+            padding-bottom: 2px;
+        }
+
+        span {
+            color: #c0c1c2;
+            font-size: 13px;
+        }
+    }
+    .address {
+
+        span {
+            color: #c0c1c2;
+            font-size: 13px;
         }
     }
 }
